@@ -1,0 +1,85 @@
+@mixin clearfix {
+  &:before {
+    display: table;
+    content: "";
+  }
+
+  &:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}
+
+// Reset
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%; //..................... 10px (10/16*100)
+    -webkit-font-smoothing: antialiased;
+    font-family: Lato, Arial, serif;
+}
+
+body {
+  background-color: #1e1e1e;
+}
+
+.container {
+  max-width: 1080px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 60px;
+  @include clearfix;
+}
+
+ul ul, 
+ol ol, 
+ul ol, 
+ol ul, 
+ul li { 
+	font-size: 100%; 
+	list-style:none;
+}
+
+input {
+  display: block;
+  box-sizing: border-box;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+  border: 1px solid #e2e2e2;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  padding: 5px;
+  width: 100%;
+}
+
+button,
+.btn {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  opacity: 1;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #006992;
+  border-radius: 4px;
+  font-size: 20px;
+  line-height: 40px;
+  -webkit-transition: opacity 200ms ease-out;
+       -o-transition: opacity 200ms ease-out;
+          transition: opacity 200ms ease-out;
+  background-color: #009DDA;
+  color: #FFF;
+
+  @media screen and (max-width: 991px) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,53 @@
+h1.front--page__heading {
+  font-size: 3.125em;
+  font-family: Lato, Arial, serif;
+  margin-bottom: 20px;
+}
+
+.content--block__inner {
+	display: block;
+	box-sizing: border-box;
+	padding: 20px;
+
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+  }
+}
+
+.quick-search {
+  background: orange;
+  min-height: 310px;
+
+  span {
+    display: block;
+
+    &.small {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.latest-jobs,
+.category-filter {
+  min-height: 310px;
+}
+
+.latest-jobs button {
+  display: inline-block;
+  width: 25%;
+  margin: 20px 20px 20px 0;
+}
+
+.latest-jobs,
+.category-filter,
+.main-content {
+  background: lightgrey;
+  border-radius: 2px;
+}
+
+.date:before {
+  content: 'Date Posted: ';
+}

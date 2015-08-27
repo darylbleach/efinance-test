@@ -1,0 +1,58 @@
+.main .row {
+  margin-bottom: 20px;
+  @include clearfix;
+}
+
+.row {
+
+  [class*="span-"] {
+    float: left;
+    margin-bottom: 0; /* Reset */
+    margin-top: 0; /* Reset */
+    margin-right: 2%;
+    @include clearfix;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .span-1  { width: 6.5%  }
+  .span-2  { width: 15%   }
+  .span-3  { width: 23.5% }
+  .span-4  { width: 32%   }
+  .span-5  { width: 40.5% }
+  .span-6  { width: 49%   }
+  .span-7  { width: 57.5% }
+  .span-8  { width: 66%   }
+  .span-9  { width: 74.5% }
+  .span-10 { width: 83%   }
+  .span-11 { width: 91.5% }
+  .span-12 { width: 100% }
+
+  .append-1  { margin-right: 10.5% }
+  .append-2  { margin-right: 19%   }
+  .append-3  { margin-right: 27.5% }
+  .append-4  { margin-right: 36%   }
+  .append-5  { margin-right: 44.5% }
+  .append-6  { margin-right: 53%   }
+  .append-7  { margin-right: 61.5% }
+  .append-8  { margin-right: 70%   }
+  .append-9  { margin-right: 78.5% }
+  .append-10 { margin-right: 87%   }
+  .append-11 { margin-right: 95.5% }
+
+  @media screen and (max-width: 899px) {
+
+  }
+
+  @media screen and (max-width:767px) {
+    .span-4,
+    .span-6,
+    .span-8 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
+
